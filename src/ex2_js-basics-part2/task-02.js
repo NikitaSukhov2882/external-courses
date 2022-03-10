@@ -3,6 +3,7 @@ function arrayElements(array) {
         console.log(array[index]);
     }
     console.log(array.length);
+    
     return undefined;
 }
 module.exports = arrayElements;
