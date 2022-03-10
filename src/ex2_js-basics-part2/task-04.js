@@ -1,12 +1,13 @@
 function sameElements(array) {
-    let Value
+    let value
     for (let index = 0; index < array.length-1; index++) {
         if (array[index] === array[index+1]) {
-            Value = true;            
-        } else { Value = false; 
+            value = true;            
+        } else { 
+            value = false; 
             break;
         }
     }
-    return Value;
+    return value;
 }
-module.exports = checkingIdenticalElements;
+module.exports = sameElements;

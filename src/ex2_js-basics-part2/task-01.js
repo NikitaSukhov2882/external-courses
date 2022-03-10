@@ -1,13 +1,13 @@
-function dataType(Value) {
-    if (typeof Value == 'string') {
-        Value = 'string';
-    } else if (isNaN(Value)) {
-        Value = 'undefined';
-    } else if (typeof Value == 'number') {
-        Value = 'number';
+function dataType(value) {
+    if (typeof value == 'string') {
+        value = 'string';
+    } else if (isNaN(value)) {
+        value = 'undefined';
+    } else if (typeof value == 'number') {
+        value = 'number';
     } else {
-        Value = 'undefined';
+        value = 'undefined';
     }
-    return Value;
+    return value;
 }
-module.exports = checkingIdenticalElements;
+module.exports = dataType;

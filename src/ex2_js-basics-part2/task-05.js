@@ -7,4 +7,4 @@ function maxElement(array) {
     }
     return element;
 }
-module.exports = checkingIdenticalElements;
+module.exports = maxElement;

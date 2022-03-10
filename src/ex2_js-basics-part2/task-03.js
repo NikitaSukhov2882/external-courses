@@ -13,4 +13,4 @@ function evenAndOddElements(arrayElements) {
     }
     return array;
 }
-module.exports = checkingIdenticalElements;
+module.exports = evenAndOddElements;
