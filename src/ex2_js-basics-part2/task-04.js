@@ -3,7 +3,8 @@ function sameElements(array) {
     for (let index = 0; index < array.length-1; index++) {
         if (array[index] === array[index+1]) {
             value = true;            
-        } else { value = false; 
+        } else { 
+                value = false; 
             break;
         }
     }
