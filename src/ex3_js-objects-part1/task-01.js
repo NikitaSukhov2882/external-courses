@@ -1,6 +1,4 @@
-const object = {
-
-};
+const object = {};
 object.a = 12;
 object.b = true;
 object.c = 'word';

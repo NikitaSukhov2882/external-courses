@@ -1,5 +1,5 @@
-function isTHereAProperty(object,name) {
+function hasProperty(object,name) {
         
     return object.hasOwnProperty(name);
 }
-module.exports = isTHereAProperty;
+module.exports = hasProperty;

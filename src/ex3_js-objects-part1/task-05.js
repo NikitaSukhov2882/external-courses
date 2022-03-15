@@ -1,6 +1,5 @@
 function cloneObject(object) {
-    const newObject = Object.assign(object);
 
-    return newObject;
+    return Object.assign(object);
 }
 module.exports = cloneObject;
