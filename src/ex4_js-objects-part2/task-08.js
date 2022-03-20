@@ -1,21 +1,10 @@
-const upperFunction = (name) => {
-    name = toLowerCase(name)
-    let nameElements = name.split('');
-    let element = nameElements[0].toUpperCase();
-    for (let index = 1; index < nameElements.length; index++) {
-        element = element + nameElements[index];
-
-    }
-    name = element;
-
-    return name;
-}
-
 const getCamelCase = (str) => {
+    str = str.toLowerCase();
     let strElements = str.split (' ');
-    let newStr = strElements[0];
+    let element;
     for (let index = 1; index < strElements.length; index++) {
-        strElements[index] = upperFunction(strElements[index]);
+        element = strElements[index][0].toUpperCase();
+        strElements[index] = element + strElements[index].substr(1);
         
     }
     
