@@ -1,0 +1,17 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#block1 {
+    border: 1px solid black;
+}
+
+#block2 {
+    outline: 1px solid gray;
+}
+
+#block3 {
+    box-shadow: 0 0 0 3px black;
+}
