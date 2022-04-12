@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="task-02.css" />
+    <title>task-02</title>
+  </head>
+  <body>
+    <form action="http://httpbin.org/post" id="reg" method="post">
+      <fieldset>
+        <legend>Personal data</legend>
+        <p>
+          <label for="surname">Surname</label>
+          <input type="text" form="reg" id="surname" name="surName" />
+        </p>
+        <p>
+          <label for="firstName">First name</label>
+          <input type="text" form="reg" id="firstName" name="firstName" />
+        </p>
+        <p>
+          <label for="middleName">Middle name</label>
+          <input type="text" form="reg" id="middleName" name="middleName" />
+        </p>
+        <p>
+          <span>You are</span>
+          <input type="radio" form="reg" id="youAre1" name="male" />
+          <label for="youAre1">male</label
+          ><input type="radio" form="reg" id="youAre2" name="female" />
+          <label for="youAre2">female</label>
+        </p>
+        <p>
+          <label for="age">Age</label>
+          <input
+            type="number"
+            min="18"
+            max="101"
+            form="reg"
+            step="1"
+            id="age"
+          />
+        </p>
+        <p>
+          <span>Country of Residance</span>
+          <select name="country" id="country" form="reg" name="country">
+            <option value="0" selected></option>
+            <option value="russia">Russia</option>
+            <option value="kazakhstan">Kazakhstan</option>
+            <option value="china">China</option>
+          </select>
+        </p>
+        <p>
+          <span>City</span>
+          <input type="checkbox" form="reg" id="ryazan" name="ryazan" />
+          <label for="city">Ryazan</label>
+          <input type="checkbox" form="reg" id="moscow" name="moscow" />
+          <label for="city">Moscow</label>
+        </p>
+        <p>
+          <span>Photography</span
+          ><input type="file" form="reg" name="photo" id="photo" />
+        </p>
+        <hr />
+        <p>
+          <span>Title</span
+          ><select name="title" id="title" size="8" form="reg">
+            <optgroup label="Technologies">
+              <option value="webMaster">Web master</option>
+              <option value="dataAdmin">Database administrator</option>
+              <option value="cad">Computer-aided design</option>
+            </optgroup>
+
+            <optgroup label="Finance">
+              <option value="ep">Economic Planning</option>
+              <option value="ma">Managment accounting</option>
+              <option value="bap">Budgeting and planning</option>
+            </optgroup>
+          </select>
+        </p>
+        <p>
+          <label for="ranged">Salary</label>
+          <input type="range" id="ranged" form="reg" step="1" name="salary" />
+        </p>
+        <textarea
+          name="Tell"
+          id="textarea"
+          cols="50"
+          rows="10"
+          form="reg"
+          placeholder="Tell about your self..."
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Contact information</legend>
+        <p>
+          <label for="site">Site</label>
+          <input type="url" id="site" form="reg" name="site" />
+        </p>
+        <p>
+          <label for="mail">Email</label>
+          <input type="email" id="mail" form="reg" name="mail" />
+        </p>
+        <p>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" form="reg" name="phone" />
+        </p>
+      </fieldset>
+      <p>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" form="reg" required name="pass" />
+      </p>
+      <p>
+        <input type="submit" form="reg" /> <input type="reset" form="reg" />
+      </p>
+    </form>
+  </body>
+</html>

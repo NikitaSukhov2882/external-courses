@@ -1,0 +1,12 @@
+#table {
+    border-spacing: 2px;
+}
+
+#headerStr {
+    height: 20px;
+    background-color: rgb(190, 203, 221);
+}
+
+.str:hover {
+    background-color: rgb(190, 203, 221);
+}

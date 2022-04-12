@@ -1,0 +1,7 @@
+#circle {
+    clip-path: circle(100px);
+}
+
+#figure {
+    clip-path: polygon(40% 0%, 70% 25%, 70% 75%, 40% 100%, 15% 100%, 25% 75%, 25% 25%, 15% 0%)
+}
