@@ -1,0 +1,123 @@
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid green;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#move {
+    display: grid;
+    grid-template-columns: 1fr 60% 1fr 1fr;
+    height: 200px;
+    background-color: #f3f3f3;
+
+}
+
+.block {
+    background-color: rgb(16, 117, 117);
+}
+
+#bigBlock {
+    background-color: #f3f3f3;
+}
+
+#lastBlock {
+    grid-column: 4/5;
+}
+
+#ball {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(40, 165, 165);
+    border-radius: 100%;
+    border: 2px solid black;
+    animation: ball 3s linear 1s infinite;
+
+
+}
+
+@keyframes ball {
+    0% {
+        left: 0%;
+
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+#superAnimation {
+    margin: 100px;
+    background: radial-gradient(green, coral);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    animation: super 5s linear normal infinite;
+}
+
+@keyframes super {
+    0% {
+        background: radial-gradient(green, coral);
+    }
+
+    8.3% {
+        border-radius: 0px;
+    }
+
+    16.7% {}
+
+    33.3% {
+        background: radial-gradient(coral, green);
+        border-radius: 0px
+    }
+
+    50% {}
+
+    67.7% {
+        width: 150px;
+        height: 150px;
+        border-radius: 0px;
+        transform: skew(10deg, 10deg);
+        background: radial-gradient(coral, green)
+    }
+
+    76% {
+
+        border-radius: 0px;
+        transform: rotate(0deg);
+        background: linear-gradient(coral, green)
+    }
+
+    83.4% {
+        border-radius: 0px;
+        background: linear-gradient(coral, green)
+    }
+
+    91% {
+        transform: rotate(360deg);
+        background: linear-gradient(coral, green)
+    }
+
+    100% {
+        border-radius: 100%;
+        background: linear-gradient(coral, green)
+    }
+}
