@@ -19,7 +19,7 @@
 
 #move {
     display: grid;
-    grid-template-columns: 1fr 60% 1fr 1fr;
+    grid-template-columns: 1fr 60% 200px 1fr;
     height: 200px;
     background-color: #f3f3f3;
 
