@@ -44,6 +44,7 @@
     background-color: rgb(40, 165, 165);
     border-radius: 100%;
     border: 2px solid black;
+    box-sizing: border-box;
     animation: ball 3s linear 1s infinite;
 
 
