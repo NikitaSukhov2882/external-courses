@@ -8,25 +8,27 @@
     <title>My library</title>
   </head>
   <body>
-    <header>
-      <a href="#" class="headButton">Help center</a>
-      <p class="headButton" id="marker">&bull;</p>
-      <a href="#" class="headButton">Our support</a>
-      <div class="headButton" id="account">
-        <img src="avatar-01.png" alt="icon" id="avatar" />
-        <p><span>John</span> <span>Doe</span></p>
-        <img src="profile_button.png" alt="" />
+    <header class="header">
+      <div class="header__item link">
+        <a href="#" class="link__item">Help center</a>
+        <p class="link__marker">&bull;</p>
+        <a href="#" class="link__item">Our support</a>
+      </div>
+      <div class="header__item account">
+        <img src="avatar-01.png" alt="icon" class="account__avatar" />
+        <p class="account__name">John Doe</p>
+        <img src="profile_button.png" alt="" class="account__marker" />
       </div>
     </header>
-    <nav></nav>
-    <main></main>
-    <footer>
-      <button name="search" id="search" class="footButton">
-        <img src="question_item.png" alt="" />
-      </button>
-      <button name="settings" id="setting" class="footButton">
-        <img src="settings_item.png" alt="" />
-      </button>
+    <nav class="nav"></nav>
+    <main class="main"></main>
+    <footer class="footer">
+      <div class="footer__item question">
+        <img src="question_item.png" alt="?" />
+      </div>
+      <div class="footer__item setting">
+        <img src="settings_item.png" alt="*" />
+      </div>
     </footer>
   </body>
 </html>
