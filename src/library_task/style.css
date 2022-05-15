@@ -15,9 +15,10 @@
 }
 
 body {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 6vh 1fr 6vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100%;
 }
 
 /*header*/
@@ -37,6 +38,7 @@ body {
     font-size: small;
     font-family: FontAwesome, Arial;
     z-index: 1;
+    position: sticky;
 }
 
 .header__item {
@@ -89,11 +91,10 @@ a.link__item:hover {
 /*nav*/
 
 .nav {
-    height: 88vh;
     overflow: hidden;
     background-color: #1f2637;
     color: #78829d;
-    width: 200px;
+    width: 15%;
     grid-column: 1/2;
     grid-row: 2/3;
     display: flex;
@@ -131,6 +132,7 @@ a.link__item:hover {
     width: 150px;
     height: 40px;
     background-color: #de4f34;
+    text-transform: uppercase;
     border-radius: 5px;
     border: none;
     color: white;
@@ -259,11 +261,9 @@ a.link__item:hover {
 /*main*/
 
 .main {
-    height: 88vh;
-    grid-column: 2/3;
-    grid-row: 2/3;
     display: flex;
     flex-direction: column;
+    width: 85%;
 }
 
 .main__header h1 {
@@ -277,7 +277,6 @@ a.link__item:hover {
 .main__search {
     height: 200px;
     background-color: #eef1f7;
-
 }
 
 .main__header,
@@ -299,30 +298,26 @@ a.link__item:hover {
     flex-direction: row;
     align-items: center;
     cursor: pointer;
+    color: #78829d;
 }
 
-.search__tab {
+.search p {
     display: flex;
     align-items: center;
     height: 25px;
     width: auto;
     border-radius: 15px;
-    margin: 0 10px;
+    margin: 0 20px;
+    padding: 5px 10px;
     cursor: pointer;
-}
-
-.search__tab a {
     margin: 0 10px;
-    color: #78829d;
     text-decoration: none;
 }
 
-.search__tab:active {
+.search__tab {
     background-color: #78829d;
-}
-
-.search__tab a:active {
-    color: white;
+    color: #ffff;
+    font-weight: 600;
 }
 
 .main__searching {
@@ -409,4 +404,56 @@ a.link__item:hover {
 
 .setting {
     background-color: #15a4fa;
+}
+
+/*stars*/
+.stars {
+    padding-left: 20px;
+    display: flex;
+    justify-content: left;
+    width: 100px;
+    margin: 0 0 0 15px;
+}
+
+.stars img {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+}
+
+.stars span {
+    padding: 0;
+    font-size: 20px;
+    color: lightgrey;
+}
+
+.stars span:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.stars>span:before {
+    content: '★';
+}
+
+.stars>span.active {
+    color: gold;
+}
+
+.filter p {
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filter p:hover {
+    background-color: #f17544;
+    color: #ffff;
+    font-weight: 600;
+}
+
+.filter_onclick {
+    background-color: #f17544;
+    color: #ffff;
+    font-weight: 600;
 }

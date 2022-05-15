@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="addBookWindow.css">
     <title>My library</title>
   </head>
   <body>
@@ -23,7 +24,7 @@
     <nav class="nav">
       <div class="nav__item add">
         <button class="add__item"> 
-           <span class="add__plus">+</span> <strong> &nbsp ADD A BOOK</strong> 
+           <span class="add__plus">+</span> <strong> &nbsp add a book</strong> 
         </button>
       </div>
       <div class="nav__item tab">
@@ -86,26 +87,16 @@
       <div class="main__header"><h1>Browse Available Books</h1></div>
       <div class="main__item search"> 
         <div class="search__item">
-          <div class="search__tab"> <a href="#">All books</a> </div>
-          <div class="search__tab"> <a href="#">Most recent</a> </div>
-          <div class="search__tab"> <a href="#">Most popular</a> </div>
-          <div class="search__tab"> <a href="#">Free books</a> </div>
+          <p id="all_books" class="search__tab">all books</p>
+          <p>most recent</p>
+          <p id="most_popular">most popular</p>
+          <p>free books</p>
         </div>
-        <input class="main__searching" type="text" placeholder="Enter Keywords" />
+        <form class="main__form">
+          <input class="main__searching" type="text" placeholder="Enter Keywords" />
+        </form>
       </div>
-      <div class="main__page book">
-          <div class="book__item">
-            <img src="src\library_task\images\little_prince.jpg" alt="image" />
-            <h1>Book name</h1>
-            <h2>Autor</h2>
-            <div class="book__stars">
-              <img src="star_book.png" alt="1" />
-              <img src="star_book.png" alt="2" />
-              <img src="star_book.png" alt="3" />
-              <img src="star_book.png" alt="4" />
-              <img src="star_book.png" alt="5" />
-            </div>
-      </div>
+      <section  id='book' class="main__page book"></section>
     </main>
     <footer class="footer">
       <div class="footer__item question">
@@ -115,5 +106,11 @@
         <img src="settings_item.png" alt="*" />
       </div>
     </footer>
+    <script type="module" src="script/addBook.js"></script>
+    <script type="module" src="script/bd.js"></script>
+    <script type="module" src="script/changeRate.js"></script>
+    <script type="module" src="script/generateCards.js"></script>
+    <script type="module" src="script/mostPopular.js"></script>
+    <script type="module" src="script/search.js"></script>
   </body>
 </html>
