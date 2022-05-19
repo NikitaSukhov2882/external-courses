@@ -41,7 +41,7 @@ const smartphone = new BatteryDevice ({
 const laptop = new BatteryDevice ({
     name: 'laptop',
     power: 500,
-    powerStatus: false,
+    powerStatus: true,
     battery: 5000,
 });
 
