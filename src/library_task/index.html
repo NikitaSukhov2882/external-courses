@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My library</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="addBookWindow.css">
+    <title>My library</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__item link">
+        <a href="#" class="link__item">Help center</a>
+        <p class="link__marker">&bull;</p>
+        <a href="#" class="link__item">Our support</a>
+      </div>
+      <div class="header__item account">
+        <img src="avatar-01.png" alt="icon" class="account__avatar" />
+        <p class="account__name">John Doe</p>
+        <img src="profile_button.png" alt="" class="account__marker" />
+      </div>
+    </header>
+    <nav class="nav">
+      <div class="nav__item add">
+        <button class="add__item"> 
+           <span class="add__plus">+</span> <strong> &nbsp add a book</strong> 
+        </button>
+      </div>
+      <div class="nav__item tab">
+        <div class="tab__item" id="now_reading"> 
+          <img src="book.png" alt="#" class="tab__img"> 
+          <a href="#" class="tab__link">Now reading</a>
+        </div>
+        <div class="tab__item" id="browse">
+          <img src="globe.png" alt="#" class="tab__img"> 
+          <a href="#" class="tab__link">Browse</a>
+        </div>
+        <div class="tab__item" id="buy_books">
+          <img src="buy.png" alt="#" class="tab__img">
+          <a href="#" class="tab__link">Buy Books</a>
+        </div>
+        <div class="tab__item" id="favorite_books">
+          <img src="star.png" alt="#" class="tab__img">
+          <a href="#" class="tab__link">Favorite Books</a>
+        </div>
+        <div class="tab__item" id="wishlist">
+          <img src="wish-list.png" alt="#" class="tab__img">
+          <a href="#" class="tab__link">Wishlist</a>
+        </div>
+        <div class="tab__item" id="history">
+          <img src="history.png" alt="#" class="tab__img">
+          <a href="#" class="tab__link">History</a>
+        </div>
+      </div>
+        <ul class="nav__item direction">
+          <li class="direction__item"><a href="#" class="direction__link"> Must Read Titles</a></li>
+          <li class="direction__item"><a href="#" class="direction__link">Best Of List</a></li>
+          <li class="direction__item"><a href="#" class="direction__link">Classic Novels</a></li>
+          <li class="direction__item"> <a href="#" class="direction__link"> Non fiction </a> </li>
+        </ul>
+        </div>
+      </div>
+      <div class="nav__item action">
+        <div class="action__item event">
+          <img src="history.png" alt="#">
+          <div class="event__item"> 
+            <p class="event__item">
+            You added <span>Fight Club</span> by <span>Chuck Pahlanluk</span> to
+            your <span>Must Read Titles</span>.
+          </p>
+          <p class="event__time"> 24 minutes ago</p></div>
+        </div>
+        <div class="action__item event">
+          <img src="history.png" alt="#">
+          <div class="event__item"> 
+            <p class="event__item">
+            You added <span>The Trial</span> by <span>Frenz Kafka</span> to
+            your <span>Read Titles</span>.
+          </p>
+          <p class="event__time"> 48 minutes ago</p></div>
+        </div>
+        <div class="action__item"></div>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="main__header"><h1>Browse Available Books</h1></div>
+      <div class="main__item search"> 
+        <div class="search__item">
+          <p id="all_books" class="search__tab">all books</p>
+          <p>most recent</p>
+          <p id="most_popular">most popular</p>
+          <p>free books</p>
+        </div>
+        <form class="main__form">
+          <input class="main__searching" type="text" placeholder="Enter Keywords" />
+        </form>
+      </div>
+      <section  id='book' class="main__page book"></section>
+    </main>
+    <footer class="footer">
+      <div class="footer__item question">
+        <img src="question_item.png" alt="?" />
+      </div>
+      <div class="footer__item setting">
+        <img src="settings_item.png" alt="*" />
+      </div>
+    </footer>
+    <script type="module" src="script/addBook.js"></script>
+    <script type="module" src="script/bd.js"></script>
+    <script type="module" src="script/changeRate.js"></script>
+    <script type="module" src="script/generateCards.js"></script>
+    <script type="module" src="script/mostPopular.js"></script>
+    <script type="module" src="script/search.js"></script>
+  </body>
 </html>
